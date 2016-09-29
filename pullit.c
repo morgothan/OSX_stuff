@@ -87,7 +87,7 @@ void checkit(char *mem, int size)
 		/* there has to be a more elegant way to do this. */
 		if (!strncmp(search, username, sizeof(username) + 1)) {
 			printf("[+] Found Credentials!\n");
-			printf("[+] Full String: \"%s\"\n", search);
+			//printf("[+] Full String: \"%s\"\n", search); //uncomment for full query string
 			user = strtok(search, "&");
 			pass = strtok(NULL, "&");
 			user = strtok(user, "=");
